@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 600px) {
+	.blogs-main-new {
+		text-align: center;
+	}
 	.blogs-news-info-container h2 {
 		text-align: center;
 	}

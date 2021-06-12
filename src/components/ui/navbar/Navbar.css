@@ -77,7 +77,6 @@ nav .nav-logo-container {
 
 nav .nav-logo-container img {
 	width: 150px;
-	margin-top: 10px;
 	transition: all 0.3s;
 }
 
@@ -109,3 +108,32 @@ nav .profile-link .topic:hover {
 	color: white;
 }
 /* #262626 */
+
+@media (max-width: 600px) {
+	nav .nav-logo-container {
+		margin-left: 15px;
+	}
+	nav .nav-logo-container img {
+		width: 120px;
+	}
+	header .owner a {
+		font-size: 20px;
+	}
+	header .owner {
+		margin-left: 15px;
+	}
+
+	header .Navbar-icons-container .icons {
+		margin-right: 15px;
+	}
+
+	nav .profile-link {
+		margin-right: 20px;
+	}
+
+	nav .profile-link .topic {
+		font-size: 12px;
+		margin-left: 5px;
+		padding: 10px;
+	}
+}
