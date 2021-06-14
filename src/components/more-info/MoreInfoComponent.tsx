@@ -17,9 +17,9 @@ export const MoreInfoComponent = () => {
 						href="https://console.cloud.google.com/navigation-error;errorUrl=%2Fhome%2Fdashboard%3Fproject%3Ddevelopment-316316&supportedpurview%3Dproject/permissions?project=development-316316&organizationId=&supportedpurview=project"
 						rel="noreferrer"
 					>
-						Contacto
+						GCP Projects
 					</a>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p>If you are interested, ask for permission.</p>
 				</div>
 			</div>
 			<div>
@@ -36,9 +36,9 @@ export const MoreInfoComponent = () => {
 						href="https://github.com/Francis-Ferri"
 						rel="noreferrer"
 					>
-						Escribe
+						GitHub profile
 					</a>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<p>Check some of my projects and code.</p>
 				</div>
 			</div>
 		</section>

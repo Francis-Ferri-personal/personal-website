@@ -9,11 +9,11 @@ export const Footer = () => {
 			<div className="flaticon">
 				Icons made by{" "}
 				<a
-					href="https://www.flaticon.com/authors/pixel-perfect"
-					title="Pixel perfect"
+					href="https://www.flaticon.com/authors/prettycons"
+					title="prettycons"
 				>
-					Pixel perfect
-				</a>{" "}
+					prettycons{" "}
+				</a>
 				from{" "}
 				<a href="https://www.flaticon.com/" title="Flaticon">
 					www.flaticon.com
@@ -22,4 +22,3 @@ export const Footer = () => {
 		</footer>
 	);
 };
-/* <div>Icons made by <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> */

@@ -4,8 +4,9 @@
 }
 
 .blogpost-img-container img {
+	border: 1px solid gray;
 	margin: 0 auto;
-	width: 80%;
+	width: 100%;
 }
 
 .blogpost-main-container {

@@ -66,6 +66,8 @@
 .project-container img {
 	display: flex;
 	margin: 0px auto;
+	max-width: 250px;
+	height: 180px;
 	/* se puede mejorar esto creo con el gap o ago asi */
 }
 
@@ -88,6 +90,9 @@
 	}
 	.profile-main-container .profile-container {
 		display: block;
+	}
+	.project-container {
+		padding: 0px;
 	}
 }
 

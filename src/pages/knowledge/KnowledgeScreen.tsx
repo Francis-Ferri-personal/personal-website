@@ -9,27 +9,36 @@ import { Link } from "react-router-dom";
 export const KnowledgeScreen = () => {
 	const dispatch = useDispatch();
 
-	useEffect(() => {
-		dispatch(startLoadingCerts());
-	}, [dispatch]);
-
 	const { certificates, loaded } = useSelector(
 		(state: AppState) => state.certs
 	);
 
+	useEffect(() => {
+		dispatch(startLoadingCerts());
+	}, [dispatch]);
+
 	if (!loaded) {
-		// TODO: Hacer una pantalla de cargando
-		return <h1>Wait...</h1>;
+		return (
+			<div className="error-screen animate__animated animate__fadeIn">
+				<div className="fa-3x">
+					<i className="fas fa-spinner fa-spin"></i>
+				</div>
+			</div>
+		);
 	}
 	if (certificates.length < 1) {
-		return <h1>No se cargaron los certificados</h1>;
+		return (
+			<div className="error-screen animate__animated animate__fadeIn">
+				<h1>Certificates were not loaded!</h1>
+			</div>
+		);
 	}
 
 	const mainCert = certificates[0];
 	const certs = certificates.slice(1);
 
 	return (
-		<>
+		<div className="animate__animated animate__fadeIn">
 			<main className="blogs-main">
 				<section className="blogs-news-container">
 					<div className="blogs-main-new">
@@ -56,17 +65,22 @@ export const KnowledgeScreen = () => {
 						{certs.map((cert) => (
 							<article key={cert.id} className="post-container">
 								<img src={cert.url} alt={cert.title} />
-								<p>{cert.title}</p>
-								<p>{cert.description}</p>
-								<Link to={"./certificate/" + cert.id} className="blogs-button">
-									Wide view
-								</Link>
+								<div className="cert-info">
+									<h4>{cert.title}</h4>
+									<p>{cert.description}</p>
+									<Link
+										to={"./certificate/" + cert.id}
+										className="blogs-button"
+									>
+										Wide view
+									</Link>
+								</div>
 							</article>
 						))}
 					</div>
 				</section>
 			</main>
 			<Footer />
-		</>
+		</div>
 	);
 };

@@ -1,7 +1,9 @@
 import { Provider } from "react-redux";
-import "./App.css";
 import { AppRouter } from "./routers/AppRouter";
+import "animate.css";
+
 import { store } from "./store/store";
+import "./App.css";
 
 function App() {
 	return (

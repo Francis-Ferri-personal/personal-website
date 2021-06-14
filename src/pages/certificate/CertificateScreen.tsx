@@ -22,20 +22,26 @@ export const CertificateScreen = () => {
 
 	if (!loaded) {
 		dispatch(startLoadingCerts());
-		// TODO: Hacer pantalla
-		return <h1>Wait</h1>;
+		return (
+			<div className="error-screen animate__animated animate__fadeIn">
+				<div className="fa-3x">
+					<i className="fas fa-spinner fa-spin"></i>
+				</div>
+			</div>
+		);
 	}
 
 	const cert = certificates.find((cert) => cert.id === certId);
 
 	return !cert ? (
-		// TODO: Hacer pantalla
-		<h1>Certificado no encontrado</h1>
+		<div className="error-screen animate__animated animate__fadeIn">
+			<h1>Certificate not found!</h1>
+		</div>
 	) : (
-		<>
+		<div className="animate__animated animate__fadeIn">
 			<section className="blogpost-main-container">
 				<div className="grid-container">
-					<h3>Titulo</h3>
+					<h3>Certificate</h3>
 					<article>
 						<h1>{cert.title}</h1>
 						<p>{cert.description}</p>
@@ -47,6 +53,6 @@ export const CertificateScreen = () => {
 			</section>
 			<MoreInfoComponent />
 			<Footer />
-		</>
+		</div>
 	);
 };
