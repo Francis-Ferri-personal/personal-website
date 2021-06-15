@@ -4,8 +4,18 @@
 	display: grid;
 }
  */
-h4 {
+.post-container h4 {
 	text-align: center;
+}
+
+.extra-info a {
+	color: #ebba16;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.extra-info a:hover {
+	color: yellowgreen;
 }
 
 .blogs-news-container {

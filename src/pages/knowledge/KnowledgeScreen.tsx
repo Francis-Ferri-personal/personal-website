@@ -78,6 +78,19 @@ export const KnowledgeScreen = () => {
 							</article>
 						))}
 					</div>
+					<section className="extra-info grid-container">
+						<h3>More certificates</h3>
+						<p>
+							If you want to see the rest of the certificates please{" "}
+							<a
+								target="_blank"
+								href="https://drive.google.com/drive/folders/1jHWmHqvXOALIP5GKndROY5CL3cQe_WIQ?usp=sharing"
+								rel="noreferrer"
+							>
+								click here
+							</a>
+						</p>
+					</section>
 				</section>
 			</main>
 			<Footer />
